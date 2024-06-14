@@ -23,7 +23,7 @@ export default function RootPage() {
           <Section.Content>
             <ul className="flex flex-col gap-y-2 list-inside list-disc">
               {education.map(({ name, value }) => (
-                <li>
+                <li key={name}>
                   <a
                     className="underline hover:no-underline"
                     href={value}
