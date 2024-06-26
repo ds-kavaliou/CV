@@ -1,5 +1,5 @@
-import { profile, skills, education } from "../assets/data.json";
-import { Section } from "../components";
+import { profile, skills, education, experience } from "../assets/data.json";
+import { Badge, Section } from "../components";
 
 export default function RootPage() {
   return (
@@ -9,7 +9,7 @@ export default function RootPage() {
           <Section.Title>Profile</Section.Title>
           <Section.Content>
             {profile.map((text, i) => (
-              <p key={i} className="mb-2">
+              <p key={i} className="mb-2 indent-8">
                 {text}
               </p>
             ))}
@@ -19,18 +19,13 @@ export default function RootPage() {
 
       <Section>
         <div className="container">
-          <Section.Title>Education and Courses</Section.Title>
+          <Section.Title>Skills</Section.Title>
           <Section.Content>
-            <ul className="flex flex-col gap-y-2 list-inside list-disc">
-              {education.map(({ name, value }) => (
+            <ul className="flex flex-col gap-y-1 list-disc">
+              {skills.map(({ name, value }) => (
                 <li key={name}>
-                  <a
-                    className="underline hover:no-underline"
-                    href={value}
-                    target="_blank"
-                  >
-                    {name}
-                  </a>
+                  <strong className="text-md">{name}:</strong>{" "}
+                  <span className="text-sm">{value}</span>
                 </li>
               ))}
             </ul>
@@ -40,13 +35,63 @@ export default function RootPage() {
 
       <Section>
         <div className="container">
-          <Section.Title>Skills</Section.Title>
+          <Section.Title>Experience</Section.Title>
           <Section.Content>
-            <ul className="flex flex-col gap-y-1 list-inside list-disc">
-              {skills.map(({ name, value }) => (
+            <ul className="space-y-4">
+              {experience.map(
+                ({ name, project, description, role, stack }, i) => (
+                  <li key={i}>
+                    <div>
+                      <div className="flex flex-col md:flex-row md:items-center md:gap-2">
+                        <h3 className="md:text-xl font-medium">{project}</h3>
+                        <span className="hidden md:block">&#8729;</span>
+                        <div className="text-sm">{name}</div>
+                      </div>
+
+                      <p className=" inte text-sm font-thin text-neutral-500 italic py-2">
+                        {description}
+                      </p>
+
+                      <ul className="list-disc list-outside">
+                        {role.map((value, i) => (
+                          <li key={i}>
+                            <p className="text-sm">{value}</p>
+                          </li>
+                        ))}
+                      </ul>
+
+                      <div className="py-2">
+                        <ul className="flex flex-wrap items-center gap-2">
+                          {stack.map((value, i) => (
+                            <li key={i}>
+                              <Badge>{value}</Badge>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                )
+              )}
+            </ul>
+          </Section.Content>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="container">
+          <Section.Title>Education and Courses</Section.Title>
+          <Section.Content>
+            <ul className="flex flex-col gap-y-2 list-outside list-disc">
+              {education.map(({ name, value }) => (
                 <li key={name}>
-                  <strong className="text-md">{name}:</strong>{" "}
-                  <span className="text-sm">{value}</span>
+                  <a
+                    className="underline hover:no-underline"
+                    href={value}
+                    target="_blank"
+                  >
+                    {name}
+                  </a>
                 </li>
               ))}
             </ul>

@@ -16,7 +16,7 @@ export default function RootLayout() {
             <h1 className="font-medium text-3xl">
               Dzianis <span className="text-blue-500">Kavaliou</span>
             </h1>
-            <ul className="flex flex-wrap justify-center w-4/5 gap-x-3 gap-y-2 text-lg">
+            <ul className="flex flex-wrap justify-center w-4/5 gap-x-4 gap-y-2 text-lg text-center">
               {details.map(({ name, value, type }) => (
                 <li key={name}>
                   <span className="text-blue-500 font-medium">{name}:</span>
@@ -38,7 +38,9 @@ export default function RootLayout() {
       <main className="py-4">
         <Outlet />
       </main>
-      <footer className="py-4 text-center">{new Date().getFullYear()}</footer>
+      <footer className="py-4 text-center shadow-inner">
+        {new Date().getFullYear()}
+      </footer>
     </>
   );
 }
