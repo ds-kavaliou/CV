@@ -1,6 +1,7 @@
 {
   "profile": [
-    "Hello! I'm a full-stack JavaScript developer with a strong specialization in React for front-end development and Node.js for back-end development. My expertise includes building dynamic, responsive web applications, creating and consuming REST APIs, and working with databases like MongoDB and PostgreSQL. With a passion for web development, I have honed my skills through numerous projects, enhancing my problem-solving abilities and attention to detail. My diverse skill set allows me to effectively bridge the gap between front-end and back-end development, ensuring seamless and efficient application performance."
+    "Hello! I am a full-stack JavaScript developer with a strong focus on front-end development using React and back-end development with Node.js. I specialize in building dynamic, responsive web applications that provide seamless user experiences.",
+    "My expertise includes creating and consuming REST APIs, as well as working with both SQL and NoSQL databases. I am dedicated to delivering robust and efficient solutions that meet business needs and enhance overall functionality."
   ],
   "details": [
     {
@@ -57,7 +58,7 @@
     },
     {
       "name": "DBs",
-      "value": "xperienced with both SQL and NoSQL databases. Proficient in database technologies such as MongoDB, PostgreSQL, and MySQL, including designing schemas, writing complex queries, optimizing performance, and ensuring data integrity and security."
+      "value": "Experienced with both SQL and NoSQL databases. Proficient in database technologies such as MongoDB, PostgreSQL, and MySQL, including designing schemas, writing complex queries, optimizing performance, and ensuring data integrity and security."
     }
   ],
   "education": [
@@ -77,33 +78,51 @@
   "experience": [
     {
       "name": "Fullstack Developer",
-      "project": "Custom CMS for restaurant",
-      "description": "Developed and managed an online restaurant platform to sell sushi. Implemented a custom CMS and frontend for seamless customer experience.",
+      "project": "Custom CMS for Restaurant",
+      "description": "Developed and managed a comprehensive online platform for a restaurant specializing in sushi. Implemented a custom CMS and an optimized frontend to ensure a seamless and engaging customer experience.",
       "startAt": "2023-01-01T00:00:00.000Z",
       "endAt": "2024-01-01T00:00:00.000Z",
       "role": [
-        "Designed and developed a custom CMS using React and Node.js",
-        "Integrated various payment gateways and ensured secure transactions",
-        "Optimized the frontend for performance and SEO",
-        "Collaborated with designers to create a user-friendly interface",
-        "Implemented real-time order tracking and notification system"
+        "Designed and developed a custom CMS using React and Node.js.",
+        "Collaborated closely with designers to create a user-friendly interface.",
+        "Implemented real-time order tracking and a notification system for customers."
       ],
-      "stack": ["React", "Next.js", "Supabase", "Tailwind"]
+      "stack": ["React", "Next.js", "Auth.js", "Supabase", "Prisma", "Tailwind"]
     },
     {
       "name": "Fullstack Developer",
       "project": "E-commerce App with Telegram Bot",
-      "description": "Developed and managed an online shop to sell honey.",
+      "description": "Developed and managed an online shop to sell honey, featuring a cart system and Telegram bot integration.",
       "startAt": "2023-01-01T00:00:00.000Z",
       "endAt": "2024-01-01T00:00:00.000Z",
       "role": [
-        "Designed and developed a custom CMS using React and Node.js",
-        "Integrated various payment gateways and ensured secure transactions",
-        "Optimized the frontend for performance and SEO",
-        "Collaborated with designers to create a user-friendly interface",
-        "Implemented real-time order tracking and notification system"
+        "Built a responsive and user-friendly e-commerce platform using React and Remix.run.",
+        "Implemented a comprehensive cart system for seamless shopping experience.",
+        "Integrated a Telegram bot to handle customer inquiries and order notifications.",
+        "Enhanced the platform's performance and SEO to boost visibility and user engagement."
       ],
-      "stack": ["UI/UX", "React", "Remix.run", "Tailwind", "Telegram API"]
+      "stack": [
+        "UI/UX",
+        "React",
+        "Remix.run",
+        "SSR",
+        "I18n",
+        "Tailwind",
+        "Telegram API"
+      ]
+    },
+    {
+      "name": "Fullstack Developer",
+      "project": "Study Projects",
+      "description": "Various projects as part of my studies, focusing on modern web technologies and best practices.",
+      "startAt": "2022-01-01T00:00:00.000Z",
+      "endAt": "2023-12-31T00:00:00.000Z",
+      "role": [
+        "Developed an interactive 15 Puzzle game using JavaScript, focusing on algorithm optimization.",
+        "Created a task management tool with a drag-and-drop interface.",
+        "Developed a productivity-focused Chrome extension similar to Google's Momentum, featuring daily inspirational quotes, to-do lists, and weather updates."
+      ],
+      "stack": ["TypeScript", "React", "Node.js", "SQL/NoSQL", "Tailwind"]
     }
   ]
 }
