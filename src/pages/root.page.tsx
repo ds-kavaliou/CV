@@ -9,7 +9,7 @@ export default function RootPage() {
           <Section.Title>Profile</Section.Title>
           <Section.Content>
             {profile.map((text, i) => (
-              <p key={i} className="mb-2 indent-8">
+              <p key={i} className="indent-4">
                 {text}
               </p>
             ))}
@@ -42,13 +42,15 @@ export default function RootPage() {
                 ({ name, project, description, role, stack }, i) => (
                   <li key={i}>
                     <div>
-                      <div className="flex flex-col md:flex-row md:items-center md:gap-2">
+                      <div className="flex flex-col md:flex-row md:items-baseline md:gap-2">
                         <h3 className="md:text-xl font-medium">{project}</h3>
                         <span className="hidden md:block">&#8729;</span>
-                        <div className="text-sm">{name}</div>
+                        <div className="text-xs uppercase tracking-wide font-semibold text-neutral-600">
+                          {name}
+                        </div>
                       </div>
 
-                      <p className=" inte text-sm font-thin text-neutral-500 italic py-2">
+                      <p className="text-sm font-thin text-neutral-600 italic py-2">
                         {description}
                       </p>
 
