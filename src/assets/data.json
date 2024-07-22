@@ -25,14 +25,14 @@
       "value": "ds.kavaliou@gmail.com"
     },
     {
-      "type": "text",
+      "type": "telegram",
       "name": "Telegram",
-      "value": "@xgPLhu6x"
+      "value": "xgPLhu6x"
     },
     {
-      "type": "link",
+      "type": "github",
       "name": "Github",
-      "value": "https://github.com/ds-kavaliou"
+      "value": "ds-kavaliou"
     }
   ],
   "skills": [
