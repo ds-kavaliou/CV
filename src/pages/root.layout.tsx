@@ -23,12 +23,17 @@ export default function RootLayout() {
                   &nbsp;
                   {type === "email" && <a href={`mailto:${value}`}>{value}</a>}
                   {type === "tel" && <a href={`tel:${value}`}>{value}</a>}
-                  {type === "link" && (
-                    <a href={value} target="_blank">
+                  {type === "github" && (
+                    <a href={`https://github.com/${value}`} target="_blank">
                       {value}
                     </a>
                   )}
                   {type === "text" && <span>{value}</span>}
+                  {type === "telegram" && (
+                    <a href={`https://t.me/${value}`} target="_blank">
+                      @{value}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
