@@ -1,7 +1,7 @@
 {
   "profile": [
-    "Hello! I am a full-stack JavaScript developer with a strong focus on front-end development using React and back-end development with Node.js. I specialize in building dynamic, responsive web applications that provide seamless user experiences.",
-    "My expertise includes creating and consuming REST APIs, as well as working with both SQL and NoSQL databases. I am dedicated to delivering robust and efficient solutions that meet business needs and enhance overall functionality."
+    "I am a dedicated full-stack developer with over two years of hands-on experience in building dynamic and responsive web applications. My primary expertise lies in frontend development using React and its advanced frameworks such as Next.js and Remix.run. I have a strong passion for creating user-friendly interfaces and seamless user experiences, leveraging my deep understanding of JavaScript, HTML, and CSS.",
+    "On the backend, I am proficient in Node.js and its powerful frameworks like Express and Nest.js, which allow me to develop robust and scalable server-side applications. My approach to development emphasizes clean, maintainable code and a thorough understanding of the entire web development lifecycle."
   ],
   "details": [
     {
@@ -91,7 +91,7 @@
     },
     {
       "name": "Fullstack Developer",
-      "project": "E-commerce App with Telegram Bot",
+      "project": "E-commerce App with Telegram Bot Integration",
       "description": "Developed and managed an online shop to sell honey, featuring a cart system and Telegram bot integration.",
       "startAt": "2023-01-01T00:00:00.000Z",
       "endAt": "2024-01-01T00:00:00.000Z",
@@ -110,19 +110,6 @@
         "Tailwind",
         "Telegram API"
       ]
-    },
-    {
-      "name": "Fullstack Developer",
-      "project": "Study Projects",
-      "description": "Various projects as part of my studies, focusing on modern web technologies and best practices.",
-      "startAt": "2022-01-01T00:00:00.000Z",
-      "endAt": "2023-12-31T00:00:00.000Z",
-      "role": [
-        "Developed an interactive 15 Puzzle game using JavaScript, focusing on algorithm optimization.",
-        "Created a task management tool with a drag-and-drop interface.",
-        "Developed a productivity-focused Chrome extension similar to Google's Momentum, featuring daily inspirational quotes, to-do lists, and weather updates."
-      ],
-      "stack": ["TypeScript", "React", "Node.js", "SQL/NoSQL", "Tailwind"]
     }
   ]
 }
